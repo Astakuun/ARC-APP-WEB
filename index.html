@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation Architecture Web</title>
+
+    <!-- Ajoutez les balises head et les liens CSS nécessaires ici -->
+    <style>
+        body {
+            font-family: 'Cascadia Mono', monospace;
+            background-color: #000; /* Blanc comme couleur de fond de la page */
+            color: #000; /* Noir comme couleur du texte principal */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px;
+            background-color: #FFF; /* Blanc comme couleur de fond de la boîte principale */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Ombre légère */
+            border-radius: 10px; /* Coins arrondis */
+        }
+
+        h1 {
+            color: #000; /* Noir comme couleur du titre principal */
+            text-align: center; /* Centrer le titre de la page */
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #000; /* Noir comme couleur des liens de navigation */
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #f2c037; /* Jaune comme couleur des liens de navigation au survol */
+        }
+
+        .content-section {
+            margin-top: 40px;
+        }
+
+        hr {
+            border-top: 2px solid #f2c037; /* Jaune comme couleur de la ligne de séparation */
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .introduction-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .introduction-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #000; /* Noir comme couleur du titre de section */
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Architecture des Applications Web</h1>
+
+        <!-- Barre de navigation Bootstrap -->
+        <ul class="nav justify-content-center nav-links">
+            <li class="nav-item">
+                <a class="nav-link active" href="file:///C:/Users/EliteBook/OneDrive/Bureau/APP%20ARCH%20WEB/templates/index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="file:///C:/Users/EliteBook/OneDrive/Bureau/APP%20ARCH%20WEB/templates/architecture_models.html">Modèles d'Architecture</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="file:///C:/Users/EliteBook/OneDrive/Bureau/APP%20ARCH%20WEB/templates/couche.html">Couches d'Architecture</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="file:///C:/Users/EliteBook/OneDrive/Bureau/APP%20ARCH%20WEB/templates/communication.html">Communication entre les Couches</a>
+            </li>
+        </ul>
+
+        <hr>
+
+        <div class="content-section">
+            <div class="introduction-section">
+                <h2>Introduction à l'Architecture des Applications Web</h2>
+                <p>
+                    L'architecture des applications web est un domaine crucial dans le développement de systèmes informatiques modernes. Elle définit la manière dont les différents composants d'une application web interagissent et communiquent entre eux pour offrir une expérience utilisateur optimale. L'objectif principal de l'architecture web est de garantir la fiabilité, la flexibilité et la scalabilité des applications tout en facilitant leur maintenance et leur évolutivité.
+
+Une architecture bien conçue permet de structurer une application de manière modulaire, avec des composants distincts jouant des rôles spécifiques. Parmi les aspects fondamentaux de l'architecture des applications web, on trouve les modèles d'architecture, les couches d'architecture et les mécanismes de communication entre les différentes parties de l'application.
+                </p>
+                <img src="C:\Users\EliteBook\Downloads\R__1_-removebg-preview (1).png" alt="Architecture Web" />
+                <p>
+                    Vous pouvez touver plus d'informations dans les autres sections d'application sur les principaux axes d'architecture des applicatons web :
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Modèles d'Architecture</h2>
+                <p>
+                     Les modèles d'architecture définissent la structure générale d'une application web. Ces modèles servent de fondation pour concevoir des systèmes qui répondent aux besoins spécifiques d'une application. Parmi les modèles couramment utilisés, citons le modèle client-serveur, le modèle MVC (Modèle-Vue-Contrôleur), et les architectures basées sur des services (comme les microservices).
+                </p>
+                <!-- Ajoutez des informations et des images sur les modèles d'architecture ici -->
+            </div>
+
+            <div class="section">
+                <h2>Couches d'Architecture</h2>
+                <p>
+                    Les couches d'architecture décomposent une application en différentes couches fonctionnelles. Chaque couche a une responsabilité spécifique et communique avec d'autres couches selon des règles définies. Les couches typiques comprennent la couche de présentation (interface utilisateur), la couche logique ou métier (traitement des données et des règles métier), et la couche de persistance des données (stockage et récupération des données).
+                </p>
+                <!-- Ajoutez des informations et des images sur les couches d'architecture ici -->
+            </div>
+
+            <div class="section">
+                <h2>Communication entre les Couches</h2>
+                <p>
+                     La communication efficace entre les différentes couches d'une application est essentielle. Cela peut se faire à travers des API (Interfaces de Programmation d'Application), des services web, des messages asynchrones, ou d'autres mécanismes. Une bonne communication garantit que chaque couche fonctionne de manière cohérente pour fournir une expérience utilisateur fluide.
+                </p>
+                <!-- Ajoutez des informations et des images sur la communication entre les couches ici -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Inclure Bootstrap JS et Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

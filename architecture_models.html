@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modèles d'Architecture</title>
+
+    <!-- Add the necessary head tags and CSS links here -->
+    <style>
+        body {
+            font-family: 'Cascadia Mono', monospace;
+            background-color: #000;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px;
+            background-color: #FFF;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center; /* Center the content within the container */
+        }
+
+        h1 {
+            color: #000;
+            text-align: center; /* Center the title */
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #f2c037;
+        }
+
+        .content-section {
+            margin-top: 40px;
+        }
+
+        hr {
+            border-top: 2px solid #f2c037;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #000;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        /* Adjust the image size */
+        .section img {
+            max-width: 100%; /* Set the maximum width to 100% of the container */
+            height: auto; /* Maintain the aspect ratio */
+            display: block; /* Remove any extra spacing below the image */
+            margin: auto; /* Center the image */
+        }
+
+        /* Video section styles */
+        .video-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .video-link {
+            color: #f2c037;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .video-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Modèles d'Architecture</h1>
+
+        <!-- Bootstrap Navigation Bar -->
+        <ul class="nav justify-content-center nav-links">
+            <li class="nav-item">
+                <a class="nav-link" href="file:///C:/Users/EliteBook/OneDrive/Bureau/APP%20ARCH%20WEB/templates/index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="file:///C:/Users/EliteBook/OneDrive/Bureau/APP%20ARCH%20WEB/templates/architecture_models.html">Modèles d'Architecture</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="file:///C:/Users/EliteBook/OneDrive/Bureau/APP%20ARCH%20WEB/templates/couche.html">Couches d'Architecture</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="file:///C:/Users/EliteBook/OneDrive/Bureau/APP%20ARCH%20WEB/templates/communication.html">Communication entre les Couches</a>
+            </li>
+        </ul>
+
+        <hr>
+
+        <div class="content-section">
+            <div class="section">
+                <h2>Architecture Monolithique</h2>
+                <p>
+                    L'architecture monolithique est un modèle où tous les composants d'une application sont regroupés en un seul monolithe.
+                    Elle présente des avantages tels que la simplicité, mais aussi des inconvénients comme la difficulté de mise à l'échelle.
+                </p>
+                <img src="C:\Users\EliteBook\Downloads\WhatsApp_Image_2024-01-12_à_14.06.14_c1c44b0f-removebg-preview.png" alt="Architecture Monolithique Image" />
+            </div>
+
+            <div class="section">
+                <h2>Architecture à Microservices</h2>
+                <p>
+                    L'architecture à microservices divise une application en petits services indépendants. Elle offre la scalabilité et la flexibilité,
+                    mais peut être complexe à gérer. Ses avantages incluent la résilience et la facilité de déploiement.
+                </p>
+                <img src="C:\Users\EliteBook\Downloads\WhatsApp_Image_2024-01-12_à_14.06.14_21b0cf67-removebg-preview.png" alt="Architecture à Microservices Image" />
+            </div>
+
+            <div class="section">
+                <h2>Architecture Serverless</h2>
+                <p>
+                    L'architecture serverless permet l'exécution de fonctions sans gérer l'infrastructure sous-jacente.
+                    Elle offre une grande souplesse et une facturation basée sur l'utilisation. Cependant, elle peut présenter des défis en termes de contrôle.
+                </p>
+                <img src="C:\Users\EliteBook\Downloads\Serverless-architecture-Working-removebg-preview.png" alt="Architecture Serverless Image" />
+            </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-section">
+            
+            <p>Pour bien comprendre la différence entre l'application monolithique et l'application micro-service, vous pouvez cliquer sur le lien ci-dessous :</p>
+            <a class="video-link" href="https://www.youtube.com/watch?v=8gGQExv-nJM" target="_blank">Regarder la Vidéo</a>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
