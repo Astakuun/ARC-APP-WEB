@@ -11,7 +11,7 @@
         body {
             font-family: 'Cascadia Mono', monospace;
             background-color: #000;
-            color: #000;
+            color: #fff; /* Changement de la couleur du texte en blanc */
             margin: 0;
             padding: 0;
         }
@@ -20,20 +20,25 @@
             max-width: 1000px;
             margin: auto;
             padding: 40px;
-            background-color: #FFF;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #333; /* Changement de la couleur de fond */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Changement de la couleur de l'ombre */
             border-radius: 10px;
+            border: 2px solid #f2c037;
             text-align: center; /* Center the content within the container */
         }
 
         h1 {
-            color: #000;
+            color: #f2c037; /* Changement de la couleur du titre */
             text-align: center; /* Center the title */
+            border-bottom: 2px solid #f2c037;
+            padding-bottom: 20px;
         }
 
         .nav-links {
             list-style: none;
             padding: 0;
+            border-bottom: 2px solid #f2c037;
+            margin-bottom: 20px;
         }
 
         .nav-links li {
@@ -43,17 +48,19 @@
 
         .nav-link {
             text-decoration: none;
-            color: #000;
+            color: #f2c037;
             font-weight: bold;
             transition: color 0.3s ease;
         }
 
         .nav-link:hover {
-            color: #f2c037;
+            color: #fff;
         }
 
         .content-section {
             margin-top: 40px;
+            border-top: 2px solid #f2c037;
+            padding-top: 20px;
         }
 
         hr {
@@ -64,10 +71,13 @@
 
         .section {
             margin-bottom: 40px;
+            border: 2px solid #f2c037;
+            padding: 20px;
+            border-radius: 5px;
         }
 
         .section h2 {
-            color: #000;
+            color: #f2c037;
         }
 
         p {
@@ -78,15 +88,16 @@
             text-align: center;
         }
 
-        /* Adjust the image size */
         .section img {
-            max-width: 100%; /* Set the maximum width to 100% of the container */
-            height: auto; /* Maintain the aspect ratio */
-            display: block; /* Remove any extra spacing below the image */
-            margin: auto; /* Center the image */
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+            border-radius: 5px; /* Ajout de bord arrondi aux images */
+            margin-top: 10px; /* Ajout d'un espacement en haut de chaque image */
+            margin-bottom: 10px; /* Ajout d'un espacement en bas de chaque image */
         }
 
-        /* Video section styles */
         .video-section {
             margin-top: 40px;
             text-align: center;
