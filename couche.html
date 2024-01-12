@@ -23,16 +23,21 @@
             background-color: #FFF;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            border: 2px solid #f2c037; /* Ajout de bordure à la boîte container */
         }
 
         h1 {
             color: #000;
-            text-align: center; /* Center the title */
+            text-align: center; /* Centrer le titre */
+            border-bottom: 2px solid #f2c037; /* Ajout de bordure en bas du titre */
+            padding-bottom: 20px; /* Ajout d'un espacement en bas du titre */
         }
 
         .nav-links {
             list-style: none;
             padding: 0;
+            border-bottom: 2px solid #f2c037; /* Ajout de bordure en bas de la barre de navigation */
+            margin-bottom: 20px; /* Ajout d'un espacement en bas de la barre de navigation */
         }
 
         .nav-links li {
@@ -53,6 +58,8 @@
 
         .content-section {
             margin-top: 40px;
+            border-top: 2px solid #f2c037; /* Ajout de bordure en haut de la section de contenu */
+            padding-top: 20px; /* Ajout d'un espacement en haut de la section de contenu */
         }
 
         hr {
@@ -63,6 +70,9 @@
 
         .section {
             margin-bottom: 40px;
+            border: 2px solid #f2c037; /* Ajout de bordure à chaque section */
+            padding: 20px; /* Ajout d'espacement à l'intérieur de chaque section */
+            border-radius: 5px; /* Ajout de bord arrondi aux sections */
         }
 
         .section h2 {
@@ -77,17 +87,20 @@
             text-align: center;
         }
 
-        /* Adjust the image size */
+        /* Ajuster la taille de l'image */
         .section img {
-            max-width: 100%; /* Set the maximum width to 100% of the container */
-            height: auto; /* Maintain the aspect ratio */
-            display: block; /* Remove any extra spacing below the image */
-            margin: auto; /* Center the image */
+            max-width: 100%; /* Définir la largeur maximale à 100% de la boîte */
+            height: auto; /* Maintenir le rapport hauteur-largeur */
+            display: block; /* Supprimer tout espacement supplémentaire en dessous de l'image */
+            margin: auto; /* Centrer l'image */
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <h1>Couches d'Architecture Web</h1>
+
+        <!-- Bootstrap Navigation Bar -->
         <ul class="nav justify-content-center nav-links">
             <li class="nav-item">
                 <a class="nav-link active" href="https://astakuun.github.io/ARC-APP-WEB">Accueil</a>
@@ -102,7 +115,6 @@
                 <a class="nav-link" href="https://astakuun.github.io/ARC-APP-WEB/communication">Communication entre les Couches</a>
             </li>
         </ul>
-
 
         <hr>
 
@@ -153,7 +165,7 @@
                     L'infrastructure concerne l'hébergement de l'application. Cela peut inclure des serveurs physiques, des serveurs
                     virtuels (VM), des conteneurs (comme Docker), et des services cloud (comme AWS, Azure, Google Cloud).
                 </p>
-                <img src="https://www.serverlab.ca/wp-content/uploads/2015/07/Nginx-Proxy-and-Varnish-Cache-2.png" />
+                <img src="https://www.serverlab.ca/wp-content/uploads/2015/07/Nginx-Proxy-and-Varnish-Cache-2.png" alt="Infrastructure Image" />
             </div>
         </div>
     </div>
